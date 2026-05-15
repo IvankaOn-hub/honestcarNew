@@ -1,0 +1,50 @@
+@use "../abstracts/variables" as *;
+
+input:not([type="radio"]):not([type="checkbox"]),
+textarea {
+  width: 100%;
+
+  border-radius: $radius-md;
+  background: $color-glass;
+  border: 0.0625rem solid $color-border-soft;
+  color: $color-white;
+
+  font-family: $font-main;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.4;
+
+  outline: none;
+  appearance: none;
+
+  transition:
+    border-color $transition,
+    background $transition,
+    color $transition,
+    box-shadow $transition;
+
+  &::placeholder {
+    color: $color-gray;
+  }
+
+  &:hover {
+    border-color: $color-border;
+  }
+
+  &:focus {
+    background: $color-glass-hover;
+    border-color: $color-blue;
+    box-shadow: 0 0 0 0.25rem rgba(47, 140, 255, 0.14);
+  }
+}
+
+input:not([type="radio"]):not([type="checkbox"]) {
+  min-height: 3rem;
+  padding: 0 1rem;
+}
+
+textarea {
+  min-height: 7.5rem;
+  padding: 1rem;
+  resize: vertical;
+}

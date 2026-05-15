@@ -1,0 +1,109 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  min-height: 37px;
+  background: $color-black;
+  border-bottom: 1px solid $color-border;
+  backdrop-filter: blur(18px);
+  font-size: .75rem;
+
+  &__inner {
+    @include flex-center;
+    min-height: 36px;
+  }
+
+  &__contacts {
+    display: none;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    color: $color-white;
+    gap: 10px;
+    transition: $transition;
+    opacity: 0.8;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  &__actions {
+    width: 100%;
+    @include flex-between;
+    gap: 20px;
+  }
+
+  &__socials {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    a {
+      opacity: 0.8;
+      transition: $transition;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__lang {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    a,
+    span {
+      color: $color-gray;
+      font-size: 12px;
+    }
+
+    a {
+      transition: $transition;
+
+      &:hover,
+      &.is-active {
+        color: $color-white;
+      }
+    }
+  }
+
+  &__booking {
+    min-height: 28px;
+    padding: 0 16px;
+    font-size: 12px;
+  }
+
+  @include tablet {
+    &__inner {
+      justify-content: space-between;
+    }
+
+    &__contacts {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+
+    &__phone,
+    &__address {
+      color: $color-gray;
+      transition: $transition;
+
+      &:hover {
+        color: $color-white;
+      }
+    }
+
+    &__actions {
+      width: auto;
+    }
+  }
+}

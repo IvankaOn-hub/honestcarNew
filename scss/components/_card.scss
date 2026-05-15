@@ -1,0 +1,30 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.card {
+  position: relative;
+  padding: 1.5rem;
+  border-radius: $radius-md;
+  background: $color-glass;
+  border: 0.0625rem solid $color-border-soft;
+  overflow: hidden;
+  transition:
+    transform $transition,
+    border-color $transition,
+    background $transition;
+
+  &:hover {
+    transform: translateY(-0.125rem);
+    border-color: $color-border;
+    background: $color-glass-hover;
+  }
+
+  h3 {
+    @include title-h3;
+
+    margin-bottom: 0.625rem;
+
+    color: $color-white;
+  }
+
+}

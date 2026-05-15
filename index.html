@@ -1,0 +1,1150 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HonestCar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Red+Hat+Display:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- 01. Top Bar -->
+    <div class="topbar">
+      <div class="container topbar__inner">
+        <div class="topbar__contacts">
+          <a class="topbar__link" href="tel:504367207">
+            <img class="icon" src="./images/icons/call.svg" alt="Call" />
+            <span>504 367 207</span>
+          </a>
+
+          <a class="topbar__link" href="https://maps.app.goo.gl/PU27N4JTdbqkwk2H9" target="_blank" rel="noopener noreferrer">
+            <img class="icon" src="./images/icons/location.svg" alt="Map" />
+            <span>Hetmańska 47A, 04-305 Warszawa</span>
+          </a>
+        </div>
+
+        <div class="topbar__actions">
+          <div class="topbar__socials">
+            <a href="#" aria-label="Instagram">
+              <img src="./images/icons/instagram.svg" alt="Instagram" class="icon" />
+            </a>
+            <a href="#" aria-label="Facebook">
+              <img src="./images/icons/facebook.svg" alt="Facebook" class="icon" />
+            </a>
+          </div>
+
+          <div class="topbar__lang">
+            <a href="#" class="is-active">UA</a>
+            <span>/</span>
+            <a href="#">PL</a>
+          </div>
+
+          <button class="btn btn--ghost topbar__booking js-open-booking" type="button">book a visit</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 02. Header / Navigation -->
+    <header class="header">
+      <div class="container header__wrapper">
+        <a href="#" class="header__logo"><img src="images/logo.png" alt="Logo" /></a>
+
+        <nav class="header__nav">
+          <a href="#services">Services</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#about">About Us</a>
+          <a href="#offers">Special Offers</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#contacts">Contact</a>
+        </nav>
+        <a class="btn btn--primary" href="tel:+48504367207">Laweta 24/7</a>
+      </div>
+    </header>
+
+    <main>
+      <!-- 03. Hero Banner -->
+      <section class="hero">
+
+        <!-- CONTENT -->
+        <div class="container">
+          <div class="hero__content">
+            <h1>Honest Car Service.</h1>
+
+            <p>
+              There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by
+              injected humour, or randomised words which don't look even slightly believable.
+            </p>
+          </div>
+          <div>
+           <!--  <div class="hero__highlights">
+              <div class="hero__highlight">
+                <span class="hero__highlight-number">150+</span>
+                <p>Satisfied Clients</p>
+              </div>
+
+              <div class="hero__highlight">
+                <span class="hero__highlight-number">OEM</span>
+                <p>Diagnostics & Service</p>
+              </div>
+
+              <div class="hero__highlight">
+                <span class="hero__highlight-number">24/7</span>
+                <p>Tow Truck Assistance</p>
+              </div>
+            </div> -->
+            <div class="hero__actions">
+              <a href="#" class="btn btn--primary js-open-booking" type="button">Book a Visit</a>
+
+              <a href="#" class="btn btn--ghost">View Services</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 04. Services -->
+      <section class="services" id="services">
+        <div class="container">
+          <div class="services__top section__head">
+            <div class="services__head">
+              <p class="eyebrow">Our Services</p>
+
+              <h2 class="section__title">Precision care for your car</h2>
+            </div>
+
+            <div class="services__intro">
+              <p>From diagnostics to complex repairs - we provide dealership-level quality with a personal touch.</p>
+
+              <a href="./services.html" class="btn btn--ghost">View All Services</a>
+            </div>
+          </div>
+
+          <div class="services__grid">
+            <a
+              href="./services/diagnostics.html"
+              class="card service-card"
+              style="--bg-image: url(&quot;../images/services/diagnostics.png&quot;)"
+            >
+              <!--  <div class="service-card__icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="4" y="5" width="16" height="11" rx="1.5" stroke="currentColor" stroke-width="1.3" />
+
+                  <path
+                    d="M7 11.5H9.2L10.4 8.5L12.2 14L13.7 10.5H17"
+                    stroke="currentColor"
+                    stroke-width="1.3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+
+                  <path d="M10 19H14" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" />
+
+                  <path d="M12 16V19" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" />
+                </svg>
+              </div> -->
+
+              <div class="service-card__content">
+                <h3>Diagnostics</h3>
+                <p>Advanced computer diagnostics to identify issues quickly and accurately.</p>
+              </div>
+            </a>
+
+            <a href="./services/engine-repair.html" class="card service-card" style="--bg-image: url(&quot;../images/services/repair.png&quot;)">
+              <!--  <div class="service-card__icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="4" y="5" width="16" height="11" rx="1.5" stroke="currentColor" stroke-width="1.3" />
+
+                  <path
+                    d="M7 11.5H9.2L10.4 8.5L12.2 14L13.7 10.5H17"
+                    stroke="currentColor"
+                    stroke-width="1.3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+
+                  <path d="M10 19H14" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" />
+
+                  <path d="M12 16V19" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" />
+                </svg>
+              </div> -->
+
+              <div class="service-card__content">
+                <h3>Engine Repair</h3>
+                <p>Complete engine service including timing belts, oil leaks, spark plugs and more.</p>
+              </div>
+            </a>
+
+            <a
+              href="./services/suspension-repair.html"
+              class="card service-card"
+              style="--bg-image: url(&quot;../images/services/suspension.png&quot;)"
+            >
+              <!-- <div class="service-card__icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="4" y="5" width="16" height="11" rx="1.5" stroke="currentColor" stroke-width="1.3" />
+
+                  <path
+                    d="M7 11.5H9.2L10.4 8.5L12.2 14L13.7 10.5H17"
+                    stroke="currentColor"
+                    stroke-width="1.3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+
+                  <path d="M10 19H14" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" />
+
+                  <path d="M12 16V19" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" />
+                </svg>
+              </div> -->
+
+              <div class="service-card__content">
+                <h3>Suspension Repair</h3>
+                <p>Shock absorbers, control arms, ball joints and stabilizer links replacement.</p>
+              </div>
+            </a>
+
+            <a href="./services/brake-system.html" class="card service-card" style="--bg-image: url(&quot;../images/services/brake.png&quot;)">
+              <!-- <div class="service-card__icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="4" y="5" width="16" height="11" rx="1.5" stroke="currentColor" stroke-width="1.3" />
+
+                  <path
+                    d="M7 11.5H9.2L10.4 8.5L12.2 14L13.7 10.5H17"
+                    stroke="currentColor"
+                    stroke-width="1.3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+
+                  <path d="M10 19H14" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" />
+
+                  <path d="M12 16V19" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" />
+                </svg>
+              </div> -->
+
+              <div class="service-card__content">
+                <h3>Brake System</h3>
+                <p>Brake pads, discs, calipers, brake hoses and brake fluid service for your safety.</p>
+              </div>
+            </a>
+
+            <a
+              href="./services/drivetrain-repair.html"
+              class="card service-card"
+              style="--bg-image: url(&quot;../images/services/drivetrain.png&quot;)"
+            >
+              <!-- <div class="service-card__icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="4" y="5" width="16" height="11" rx="1.5" stroke="currentColor" stroke-width="1.3" />
+
+                  <path
+                    d="M7 11.5H9.2L10.4 8.5L12.2 14L13.7 10.5H17"
+                    stroke="currentColor"
+                    stroke-width="1.3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+
+                  <path d="M10 19H14" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" />
+
+                  <path d="M12 16V19" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" />
+                </svg>
+              </div> -->
+
+              <div class="service-card__content">
+                <h3>Drivetrain Repair</h3>
+                <p>Clutch, driveshafts, CV joints, gearbox, transfer case and differential repairs.</p>
+              </div>
+            </a>
+
+            <a
+              href="./services/additional-services.html"
+              class="card service-card"
+              style="--bg-image: url(&quot;../images/services/additional.png&quot;)"
+            >
+              <!-- <div class="service-card__icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="4" y="5" width="16" height="11" rx="1.5" stroke="currentColor" stroke-width="1.3" />
+
+                  <path
+                    d="M7 11.5H9.2L10.4 8.5L12.2 14L13.7 10.5H17"
+                    stroke="currentColor"
+                    stroke-width="1.3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+
+                  <path d="M10 19H14" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" />
+
+                  <path d="M12 16V19" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" />
+                </svg>
+              </div> -->
+
+              <div class="service-card__content">
+                <h3>Additional Services</h3>
+                <p>Headlight restoration, A/C service, endoscope inspection, coding and more.</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="services__benefits">
+            <div class="services__benefit">
+              <div class="services__benefit-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12 3L18.5 5.5V11.2C18.5 15.5 15.8 19.4 12 21C8.2 19.4 5.5 15.5 5.5 11.2V5.5L12 3Z"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M8.8 12L11 14.2L15.4 9.8"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </svg>
+              </div>
+              <div>
+                <h3>Quality Parts</h3>
+                <p>OEM or equivalent parts always.</p>
+              </div>
+            </div>
+
+            <div class="services__benefit">
+              <div class="services__benefit-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12 13C14.2091 13 16 11.2091 16 9C16 6.79086 14.2091 5 12 5C9.79086 5 8 6.79086 8 9C8 11.2091 9.79086 13 12 13Z"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                  ></path>
+
+                  <path
+                    d="M5 20C5.8 17.2 8.4 15.5 12 15.5C15.6 15.5 18.2 17.2 19 20"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                  ></path>
+
+                  <path
+                    d="M17.5 6.5L18.3 8.1L20 8.3L18.8 9.5L19.1 11.2L17.5 10.3L15.9 11.2L16.2 9.5L15 8.3L16.7 8.1L17.5 6.5Z"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linejoin="round"
+                  ></path>
+                </svg>
+              </div>
+              <div>
+                <h3>Expert Technicians</h3>
+                <p>Certified specialists with years of experience.</p>
+              </div>
+            </div>
+
+            <div class="services__benefit">
+              <div class="services__benefit-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="12" cy="12" r="8.5" stroke="currentColor" stroke-width="1.4" />
+                  <path d="M12 7.5V12L15 14" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+              <div>
+                <h3>Fast Turnaround</h3>
+                <p>Transparent process and timely service.</p>
+              </div>
+            </div>
+
+            <button class="btn btn--primary js-open-booking" type="button">Book a Visit</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- 05. Before / After -->
+     <!--  <section class="before-after section" id="before-after">
+        <div class="before-after__inner">
+          <div class="before-after__layout">
+            <div class="before-after__content">
+              <p class="eyebrow">Before / After</p>
+
+              <h2 class="section__title">Real transformations. Professional results.</h2>
+
+              <p class="before-after__text">
+                From worn-out details to factory-fresh finishes - every car receives the attention it deserves.
+              </p>
+            </div>
+
+            <div class="comparison">
+              <img class="comparison__image comparison__image--after" src="./images/before-after/after-main.png" alt="Car after service" />
+
+              <img
+                class="comparison__image comparison__image--before"
+                src="./images/before-after/before-main.png"
+                alt="Car before service"
+              />
+
+              <div class="comparison__line"></div>
+
+              <button class="comparison__handle" type="button" aria-label="Drag comparison">‹ ›</button>
+
+              <span class="comparison__label comparison__label--before">Before</span>
+              <span class="comparison__label comparison__label--after">After</span>
+            </div>
+          </div>
+
+          <div class="before-after__projects">
+            <div class="before-after__projects-head">
+              <p class="eyebrow">More transformations</p>
+              <h3>Every car has a story.</h3>
+              <p>Here are a few we’re proud of.</p>
+            </div>
+
+            <a href="#" class="project-card">
+              <img src="./images/before-after/headlight.png" alt="" />
+              <h4>Headlight Restoration</h4>
+            </a>
+
+            <a href="#" class="project-card">
+              <img src="./images/before-after/headlight.png" alt="" />
+              <h4>Paint Correction</h4>
+            </a>
+
+            <a href="#" class="project-card">
+              <img src="./images/before-after/headlight.png" alt="" />
+              <h4>Bumper Repair</h4>
+            </a>
+          </div>
+
+          <div class="before-after__actions">
+            <a href="./results.html" class="btn btn--ghost">See More Results</a>
+          </div>
+        </div>
+      </section> -->
+
+      <!-- 06. About Company -->
+      <!-- <section class="about section" id="about">
+        <div class="about__inner">
+          <div class="about__media">
+            <img
+              class="about__image about__image--main"
+              src="./images/about/workshop-tools.jpg"
+              alt="Workshop tools at Honest Car Service"
+            />
+
+            <img class="about__image about__image--top" src="./images/about/workshop-bay.jpg" alt="Car service workshop" />
+
+            <img class="about__image about__image--bottom" src="./images/about/workshop-street.jpg" alt="Cars inside the workshop" />
+          </div>
+
+          <div class="about__content">
+            <p class="eyebrow">About Company</p>
+
+            <h2 class="section__title">Premium car service with an honest approach.</h2>
+
+            <div class="about__text">
+              <p>
+                We create a service where the client receives not just a repair, but a clear, comfortable and high-quality car maintenance
+                experience.
+              </p>
+
+              <p>
+                Our team works with attention to detail, uses modern equipment and explains every step of the work before moving forward.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section> -->
+
+      <!-- 07. CTA BANNER -->
+      <!-- <section class="cta-banner">
+      <div class="cta-banner__inner">
+        <div class="cta-banner__content">
+          <p class="eyebrow">Book a Service</p>
+
+          <h2 class="section__title">
+            Ready to take care of your car?
+          </h2>
+
+          
+        </div>
+        <div>
+          <p>
+            Schedule a visit and we will contact you to confirm the details.
+          </p>
+           <button class="btn btn--primary js-open-booking" type="button">
+          Book a Visit
+        </button>
+        </div>
+
+       
+      </div>
+    </section> -->
+
+      <!-- 08. Reviews -->
+      <!-- <section class="reviews section" id="reviews">
+        <div class="reviews__inner">
+          <div class="reviews__content">
+            <p class="eyebrow">Reviews</p>
+
+            <h2 class="section__title">What our clients say</h2>
+
+            <p class="reviews__text">Real feedback from drivers who trust us with their cars.</p>
+
+            <div class="reviews__rating">
+              <span>4.9</span>
+              <p>★★★★★</p>
+            </div>
+
+            <p class="reviews__source">Based on 200+ reviews on Google Maps</p>
+
+            <a href="#" class="btn btn--ghost">View on Google Maps</a>
+          </div>
+
+          <div class="reviews__grid">
+            <article class="review-card">
+              <div class="review-card__stars">★★★★★</div>
+              <p>
+                Professional service, fair prices and very good contact. The car was ready on time and everything was explained in detail.
+              </p>
+              <div class="review-card__footer">
+                <span>Artur</span>
+                <span>2 weeks ago</span>
+              </div>
+            </article>
+
+            <article class="review-card">
+              <div class="review-card__stars">★★★★★</div>
+              <p>Honest and reliable. They diagnosed the problem quickly and fixed it the same day.</p>
+              <div class="review-card__footer">
+                <span>Artur</span>
+                <span>1 month ago</span>
+              </div>
+            </article>
+
+            <article class="review-card">
+              <div class="review-card__stars">★★★★★</div>
+              <p>Great experience. Transparent pricing, no hidden costs and a very professional team.</p>
+              <div class="review-card__footer">
+                <span>Artur</span>
+                <span>1 month ago</span>
+              </div>
+            </article>
+
+            <article class="review-card">
+              <div class="review-card__stars">★★★★★</div>
+              <p>I’ve been coming here for years. Always top quality service and a friendly atmosphere.</p>
+              <div class="review-card__footer">
+                <span>Artur</span>
+                <span>2 months ago</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="reviews__stats">
+            <div class="reviews__stat">
+              <span>4.9/5</span>
+              <p>Average rating</p>
+            </div>
+
+            <div class="reviews__stat">
+              <span>200+</span>
+              <p>Real client reviews</p>
+            </div>
+
+            <div class="reviews__stat">
+              <span>100%</span>
+              <p>Verified feedback</p>
+            </div>
+
+            <div class="reviews__stat">
+              <span>Warsaw</span>
+              <p>Trusted by local drivers</p>
+            </div>
+          </div>
+        </div>
+      </section> -->
+
+      <!-- 09. Car Brands -->
+      <!-- <section class="brands section" id="brands">
+        <div class="brands__inner">
+          <div class="brands__grid">
+            <div class="brand-card">
+              <img src="./images/brands/mercedes.png" alt="Mercedes-Benz" />
+            </div>
+
+            <div class="brand-card">
+              <img src="./images/brands/mercedes.png" alt="Mercedes-Benz" />
+            </div>
+
+            <div class="brand-card">
+              <img src="./images/brands/mercedes.png" alt="Mercedes-Benz" />
+            </div>
+
+            <div class="brand-card">
+              <img src="./images/brands/mercedes.png" alt="Mercedes-Benz" />
+            </div>
+
+            <div class="brand-card">
+              <img src="./images/brands/mercedes.png" alt="Mercedes-Benz" />
+            </div>
+
+            <div class="brand-card">
+              <img src="./images/brands/mercedes.png" alt="Mercedes-Benz" />
+            </div>
+
+            <div class="brand-card">
+              <img src="./images/brands/mercedes.png" alt="Mercedes-Benz" />
+            </div>
+
+            <div class="brand-card">
+              <img src="./images/brands/mercedes.png" alt="Mercedes-Benz" />
+            </div>
+          </div>
+          <div class="brands__content">
+            <p class="eyebrow">Brands We Service</p>
+
+            <h2 class="section__title">We work with all major brands</h2>
+
+            <p>Our specialists have experience with a wide range of makes and models.</p>
+          </div>
+
+          <div class="brands__actions">
+            <a href="./brands.html" class="btn btn--ghost">See All Brands</a>
+          </div>
+        </div>
+      </section> -->
+
+      <!-- 11. Service Process -->
+      <section class="process section" id="process" data-step="form">
+        <div class="process__inner">
+          <div class="section__head-col">
+            <div class="section__head-col-left">
+              <p class="eyebrow">How We Work</p>
+
+              <h2 class="section__title">How to use our services?</h2>
+            </div>
+
+            <div class="section__head-col-right">
+              <p>A simple process, full care and the highest quality at every stage.</p>
+
+              <button class="btn btn--ghost js-open-booking">Book a visit</button>
+            </div>
+          </div>
+
+          <div class="process__grid">
+            <div class="process__visual">
+            <div class="process__image">
+              <img src="./images/process/process-car.png" alt="Car in premium service garage" />
+
+              <div class="process__overlay process__overlay--form">
+                <span>Quick request</span>
+                <div></div>
+                <div></div>
+                <button type="button">Send request</button>
+              </div>
+
+              <div class="process__overlay process__overlay--diagnostics">
+                <span>Diagnostic system</span>
+                <p>Scan in progress...</p>
+                <ul>
+                  <li>Engine — OK</li>
+                  <li>Brakes — OK</li>
+                  <li>Suspension — Check</li>
+                </ul>
+              </div>
+
+              <div class="process__overlay process__overlay--repair">
+                <span>Service mode</span>
+                <p>Repair in progress</p>
+              </div>
+
+              <div class="process__scan process__scan--vertical"></div>
+              <!-- <div class="process__scan process__scan--horizontal"></div> -->
+              <div class="process__headlights"></div>
+            </div>
+            </div>
+            <div class="process__content">
+              <div class="process__timeline">
+                <article class="process-step is-active" data-step="form">
+                  <span class="process-step__number">01</span>
+                  <div>
+                    <h3>Form</h3>
+                    <p>Leave your details and describe the problem with your car.</p>
+                  </div>
+                </article>
+
+                <article class="process-step" data-step="diagnostics">
+                  <span class="process-step__number">02</span>
+                  <div>
+                    <h3>Diagnostics</h3>
+                    <p>We check the car and inform you about the scope of work.</p>
+                  </div>
+                </article>
+
+                <article class="process-step" data-step="repair">
+                  <span class="process-step__number">03</span>
+                  <div>
+                    <h3>Repair</h3>
+                    <p>You leave your car at the service center or wait there.</p>
+                  </div>
+                </article>
+
+                <article class="process-step" data-step="pickup">
+                  <span class="process-step__number">04</span>
+                  <div>
+                    <h3>Reception</h3>
+                    <p>You receive the finished car along with information about.</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 12. FAQ -->
+     <!--  <section class="faq section" id="faq">
+      <div class="faq__inner">
+        <div class="faq__content">
+          <p class="eyebrow">FAQ</p>
+
+          <h2 class="section__title">
+            Frequently asked questions
+          </h2>
+
+        </div>
+
+        <div class="faq__accordion">
+          <details class="faq-item" open>
+            <summary>
+              How long does a typical repair take?
+              <span></span>
+            </summary>
+
+            <p>
+              The time depends on the type of repair. Most services are completed the same day, but we always give you an estimated time after diagnostics.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>
+              Do you use OEM parts?
+              <span></span>
+            </summary>
+
+            <p>
+              We use OEM or high-quality equivalent parts, depending on your preference and the repair requirements.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>
+              Do you offer a warranty?
+              <span></span>
+            </summary>
+
+            <p>
+              Yes, most repairs are covered by warranty. We explain warranty details before starting the work.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>
+              Can I wait at your service center?
+              <span></span>
+            </summary>
+
+            <p>
+              Yes, you can wait on site for selected services. For longer repairs, you can leave the car with us.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>
+              How much will the repair cost?
+              <span></span>
+            </summary>
+
+            <p>
+              We provide a clear estimate after checking the car. No hidden costs — we confirm the scope before any repair.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section> -->
+
+      <!-- 13. SEO Text -->
+     <!--  <section class="section seo-block" id="seo">
+      <div class="seo-block__inner">
+                <div class="seo-block__card">
+          <div class="seo-block__content">
+            <p class="eyebrow">About our service</p>
+
+            <h2 class="section__title">
+              Professional car service with an honest approach.
+            </h2>
+
+            <div class="seo-block__text is-collapsed" id="seoText">
+              <p>
+                Honest Car Service provides premium automotive diagnostics,
+                repairs and maintenance for modern vehicles in Warsaw.
+                We combine dealership-level precision with a transparent,
+                client-focused experience.
+              </p>
+
+              <p>
+                Our workshop specializes in diagnostics, suspension repair,
+                brake systems, drivetrain service and complex engine repairs.
+                Every vehicle is inspected using modern equipment and OEM-grade
+                procedures.
+              </p>
+
+              <p>
+                We focus on quality workmanship, clear communication and
+                attention to detail. Clients receive full information about
+                performed work, estimated timelines and recommended solutions.
+              </p>
+
+              <p>
+                Whether you need routine maintenance or advanced diagnostics,
+                our experienced technicians ensure your car receives the care
+                it deserves in a premium garage environment.
+              </p>
+            </div>
+
+            <button class="seo-block__toggle btn btn--ghost" id="seoToggle">
+              Read more
+            </button>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- 14. Blog -->
+    <!--  <section class="blog-preview section" id="blog">
+      <div class="blog-preview__inner">
+        <div class="blog-preview__grid">
+          <article class="blog-card">
+            <a href="./blog/when-change-tires.html">
+              <img src="./images/blog/car.png" alt="Car tire service">
+            </a>
+
+            <div class="blog-card__content">
+              <p class="blog-card__category">Tips</p>
+
+              <h4>
+                <a href="./blog/when-change-tires.html">
+                  When should you change your tires?
+                </a>
+              </h4>
+
+              <a href="./blog/when-change-tires.html" class="blog-card__link">
+                Read more
+                <span>→</span>
+              </a>
+            </div>
+          </article>
+
+          <article class="blog-card">
+            <a href="./blog/car-needs-service.html">
+              <img src="./images/blog/car.png" alt="Mechanic checking engine">
+            </a>
+
+            <div class="blog-card__content">
+              <p class="blog-card__category">Maintenance</p>
+
+              <h4>
+                <a href="./blog/car-needs-service.html">
+                  5 signs your car needs immediate attention
+                </a>
+              </h4>
+
+              <a href="./blog/car-needs-service.html" class="blog-card__link">
+                Read more
+                <span>→</span>
+              </a>
+            </div>
+          </article>
+
+          <article class="blog-card">
+            <a href="./blog/change-oil.html">
+              <img src="./images/blog/car.png" alt="Oil change service">
+            </a>
+
+            <div class="blog-card__content">
+              <p class="blog-card__category">Service</p>
+
+              <h4>
+                <a href="./blog/change-oil.html">
+                  How often should you change your oil?
+                </a>
+              </h4>
+
+              <a href="./blog/change-oil.html" class="blog-card__link">
+                Read more
+                <span>→</span>
+              </a>
+            </div>
+          </article>
+        </div>
+        <div class="blog-preview__head">
+          <p class="eyebrow">Blog</p>
+
+          <h2 class="section__title">
+            Tips, news and insights
+          </h2>
+
+          <a href="./blog.html" class="btn btn--ghost">
+            View All Articles
+          </a>
+        </div>
+
+        
+      </div>
+    </section> -->
+      
+    </main>
+
+    <!-- 15. Footer / Contact -->
+    <footer class="footer" id="contact">
+      <div class="footer__inner">
+        <div class="footer__top">
+          <div class="footer__brand">
+            <a href="./index.html" class="footer__logo">
+              <img src="./images/logo.png" alt="Honest Car Service" />
+            </a>
+
+            <p>Professional car service in Warsaw. Honest approach, quality you can trust.</p>
+
+            <div class="footer__socials">
+              <a href="#" aria-label="Facebook">Fb</a>
+              <a href="#" aria-label="Instagram">Ig</a>
+              <a href="#" aria-label="TikTok">Tk</a>
+            </div>
+
+            <button class="btn btn--primary js-open-booking" type="button">Book a Visit</button>
+          </div>
+
+          <nav class="footer__nav" aria-label="Footer navigation">
+            <div class="footer__column">
+              <h3>Quick Links</h3>
+
+              <ul>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#before-after">Before / After</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="./blog.html">Blog</a></li>
+              </ul>
+            </div>
+
+            <div class="footer__column">
+              <h3>Services</h3>
+
+              <ul>
+                <li><a href="./services/diagnostics.html">Diagnostics</a></li>
+                <li><a href="./services/engine-repair.html">Engine Repair</a></li>
+                <li><a href="./services/suspension-repair.html">Suspension Repair</a></li>
+                <li><a href="./services/brake-system.html">Brake System</a></li>
+                <li><a href="./services/drivetrain-repair.html">Drivetrain Repair</a></li>
+                <li><a href="./services/additional-services.html">Additional Services</a></li>
+              </ul>
+            </div>
+          </nav>
+
+          <div class="footer__contact">
+            <h3>Contact Us</h3>
+
+            <ul>
+              <li>
+                <span>Phone</span>
+                <a href="tel:+48504367207">504 367 207</a>
+              </li>
+
+              <li>
+                <span>Address</span>
+                <a href="https://www.google.com/maps" target="_blank" rel="noopener">Hetmańska 47A, 04-305 Warszawa</a>
+              </li>
+
+              <li>
+                <span>Email</span>
+                <a href="mailto:kontakt@honestcarservice.pl">kontakt@honestcarservice.pl</a>
+              </li>
+
+              <li>
+                <span>Hours</span>
+                <p>Mon - Sat: 8:00 - 20:00</p>
+              </li>
+            </ul>
+
+            <a
+              class="footer__map"
+              href="https://maps.app.goo.gl/oJS1xrTatrGjEMio6"
+              target="_blank"
+              rel="noopener"
+              aria-label="Open location in Google Maps"
+            >
+              <img src="./images/contact/maps.png" alt="" />
+            </a>
+          </div>
+        </div>
+
+        <div class="footer__bottom">
+          <p>© 2026 Honest Car Service. All rights reserved.</p>
+
+          <div>
+            <a href="./privacy-policy.html">Privacy Policy</a>
+            <a href="./terms.html">Terms & Conditions</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="floating-booking" id="bookingPanel">
+      <div class="floating-booking__inner">
+        <div class="floating-booking__intro">
+          <p>Schedule a Visit</p>
+          <span>or ask a question</span>
+        </div>
+
+        <form class="floating-booking__form">
+          <div class="floating-booking__compact">
+            <input class="floating-booking__email js-expand-booking" type="email" placeholder="Your email" required />
+
+            <button class="floating-booking__close js-close-booking" type="button" aria-label="Закрити форму">×</button>
+          </div>
+
+          <div class="floating-booking__full">
+            <div class="floating-booking__head">
+              <p class="eyebrow">Quick Booking</p>
+              <h2>Book a visit or get a service evaluation</h2>
+              <p>Fill out the short form and we will contact you to clarify the details.</p>
+            </div>
+
+            <div class="floating-booking__purpose">
+              <p>For what purpose do you want to contact?</p>
+
+              <label>
+                <input type="radio" name="purpose" value="visit" checked />
+                <span>Book a visit</span>
+              </label>
+
+              <label>
+                <input type="radio" name="purpose" value="question" />
+                <span>Another question</span>
+              </label>
+            </div>
+
+            <div class="floating-booking__fields">
+              <input type="email" placeholder="Email" />
+              <input type="text" placeholder="Your name" />
+              <input type="tel" placeholder="Phone" />
+              <input type="text" placeholder="Last 7 digits of VIN" />
+              <textarea placeholder="Message"></textarea>
+            </div>
+
+            <div class="floating-booking__actions">
+              <button class="btn btn--primary" type="submit">Sign up</button>
+
+              <button class="btn btn--ghost js-collapse-booking" type="button">Back</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      const bookingPanel = document.querySelector("#bookingPanel");
+
+      const openButtons = document.querySelectorAll(".js-open-booking");
+
+      const expandInput = document.querySelector(".js-expand-booking");
+
+      const closeButton = document.querySelector(".js-close-booking");
+
+      const collapseButton = document.querySelector(".js-collapse-booking");
+
+      // OPEN BOOKING
+      openButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          bookingPanel.classList.remove("is-hidden");
+
+          bookingPanel.classList.add("is-expanded");
+        });
+      });
+
+      // EXPAND ON EMAIL FOCUS
+      expandInput.addEventListener("focus", () => {
+        bookingPanel.classList.add("is-expanded");
+      });
+
+      // HIDE PANEL
+      closeButton.addEventListener("click", () => {
+        bookingPanel.classList.add("is-hidden");
+      });
+
+      // COLLAPSE FULLSCREEN
+      collapseButton.addEventListener("click", () => {
+        bookingPanel.classList.remove("is-expanded");
+      });
+
+      const comparison = document.querySelector(".comparison");
+      const beforeImage = document.querySelector(".comparison__image--before");
+      const line = document.querySelector(".comparison__line");
+      const handle = document.querySelector(".comparison__handle");
+
+      if (comparison) {
+        comparison.addEventListener("pointermove", (event) => {
+          const rect = comparison.getBoundingClientRect();
+          const position = ((event.clientX - rect.left) / rect.width) * 100;
+          const clamped = Math.max(8, Math.min(position, 92));
+
+          beforeImage.style.clipPath = `inset(0 ${100 - clamped}% 0 0)`;
+          line.style.left = `${clamped}%`;
+          handle.style.left = `${clamped}%`;
+        });
+      }
+
+      // Process Working
+      const processSection = document.querySelector(".process");
+      const processSteps = document.querySelectorAll(".process-step");
+
+      processSteps.forEach((step) => {
+        step.addEventListener("mouseenter", () => {
+          processSteps.forEach((item) => item.classList.remove("is-active"));
+
+          step.classList.add("is-active");
+          processSection.dataset.step = step.dataset.step;
+        });
+
+        step.addEventListener("click", () => {
+          processSteps.forEach((item) => item.classList.remove("is-active"));
+
+          step.classList.add("is-active");
+          processSection.dataset.step = step.dataset.step;
+        });
+      });
+
+      // SEO READ MORE
+      const seoToggle = document.getElementById("seoToggle");
+      const seoText = document.getElementById("seoText");
+
+      seoToggle?.addEventListener("click", () => {
+        seoText.classList.toggle("is-collapsed");
+
+        seoToggle.textContent = seoText.classList.contains("is-collapsed")
+          ? "Read more"
+          : "Show less";
+      });
+    </script>
+  </body>
+</html>

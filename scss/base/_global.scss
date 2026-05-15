@@ -1,0 +1,115 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+body {
+  background: $color-black;
+  @include body-text;
+}
+
+section{
+  @include section-padding;
+}
+
+.container{ 
+  @include container;
+}
+
+.text-center{
+  text-align: center;
+}
+
+p {
+  font-weight: 300;
+}
+
+.container {
+  @include container;
+}
+
+.eyebrow {
+  color: $color-blue-soft;
+  font-family: $font-main;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  padding-left: 2rem;
+  position: relative;
+  display: inline-block;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 1px;
+    width: 1.5rem;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: $color-blue-soft;
+  }
+}
+
+.section {
+
+  &__head {
+    margin-bottom: 80px;
+  }
+
+  &__head-col{
+    display: grid;
+    margin-bottom: 60px;
+
+    @include desktop{
+      grid-template-columns: 1.1fr 0.9fr;
+      align-items: end;
+      gap: 80px;
+      margin-bottom: 80px;
+    }
+
+    &-left{
+      max-width: 720px;
+    }
+    &-right{
+      max-width: 440px;
+      & p {
+        margin-bottom: 28px;
+      }
+    }
+  }
+
+  &__title {
+    @include title-h2;
+    margin-top: 14px;
+  }
+
+  &__text {
+    margin-top: 20px;
+    color: $color-gray;
+    font-size: 18px;
+    line-height: 1.7;
+    max-width: 70ch;
+  }
+}
+
+.grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr;
+
+  &--3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  &--4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  @include tablet {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include desktop {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

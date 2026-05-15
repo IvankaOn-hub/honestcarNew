@@ -1,0 +1,65 @@
+@use "../abstracts/variables" as *;
+
+.btn {
+  min-height: 3rem;
+  padding: 0 2rem;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.625rem;
+
+  border-radius: $radius-full;
+
+  font-family: $font-main;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  cursor: pointer;
+
+  transition:
+    background $transition,
+    border-color $transition,
+    color $transition,
+    transform $transition,
+    box-shadow $transition;
+
+  &:hover {
+    transform: translateY(-0.0625rem);
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+}
+
+.btn--primary {
+  background: $color-blue;
+  border: 0.0625rem solid $color-blue;
+  color: $color-white;
+
+  box-shadow: 0 0.875rem 2.5rem rgba(47, 140, 255, 0.28);
+
+  &:hover {
+    background: $color-blue-hover;
+    border-color: $color-blue-hover;
+    box-shadow: 0 1rem 3rem rgba(47, 140, 255, 0.36);
+  }
+}
+
+.btn--ghost {
+  background: transparent;
+  border: 0.0625rem solid $color-border;
+  color: $color-white;
+  backdrop-filter: blur(1rem);
+
+  &:hover {
+    background: $color-glass-hover;
+    border-color: $color-gray-light;
+    color: $color-white;
+  }
+}
