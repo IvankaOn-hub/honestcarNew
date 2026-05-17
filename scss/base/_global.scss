@@ -6,26 +6,46 @@ body {
   @include body-text;
 }
 
-section{
+section {
   @include section-padding;
-}
-
-.container{ 
-  @include container;
-}
-
-.text-center{
-  text-align: center;
-}
-
-p {
-  font-weight: 300;
 }
 
 .container {
   @include container;
 }
 
+.text-center {
+  text-align: center;
+}
+
+.container {
+  @include container;
+}
+.white-section {
+  background: $color-white;
+  color: $color-black;
+
+  & .section__title {
+    color: $color-black;
+  }
+  & p {
+    color: $color-dark-gray;
+  }
+
+  & .eyebrow {
+    color: $color-dark-gray;
+    &::before {
+      background-color: $color-dark-gray;
+    }
+  }
+
+  & .btn.btn--ghost {
+    backdrop-filter: blur(32px);
+    background-color: rgba(156, 156, 159, 0.005);
+    border: 0.0625rem solid rgb(39 39 39 / 12%);
+    color: $color-black;
+  }
+}
 .eyebrow {
   color: $color-blue-soft;
   font-family: $font-main;
@@ -51,26 +71,21 @@ p {
 }
 
 .section {
-
   &__head {
-    margin-bottom: 80px;
-  }
-
-  &__head-col{
     display: grid;
-    margin-bottom: 60px;
+    gap: $gap-xl;
+    margin-bottom: 80px;
 
-    @include desktop{
+    @include desktop {
       grid-template-columns: 1.1fr 0.9fr;
       align-items: end;
       gap: 80px;
-      margin-bottom: 80px;
     }
 
-    &-left{
+    &-left {
       max-width: 720px;
     }
-    &-right{
+    &-right {
       max-width: 440px;
       & p {
         margin-bottom: 28px;

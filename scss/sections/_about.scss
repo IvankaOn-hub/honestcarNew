@@ -2,10 +2,6 @@
 @use "../abstracts/mixins" as *;
 
 .about {
-  /* background: radial-gradient(circle at left center, rgba($color-blue, 0.08), transparent 36%), $color-black; */
- background:
-    radial-gradient(circle at 18% 50%, rgba(127, 151, 199, 0.06), transparent 34%),
-    #070b12;
   &__inner {
     @include container;
 
@@ -83,9 +79,7 @@
     margin-top: 42px;
 
     p {
-      color: $color-gray-light;
       font-size: 18px;
-      font-weight: 300;
       line-height: 1.75;
     }
   }

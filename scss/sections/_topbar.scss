@@ -9,11 +9,11 @@
   background: $color-black;
   border-bottom: 1px solid $color-border;
   backdrop-filter: blur(18px);
-  font-size: .75rem;
+  font-size: 1rem;
 
   &__inner {
     @include flex-center;
-    min-height: 36px;
+    min-height: 42px;
   }
 
   &__contacts {
@@ -26,10 +26,9 @@
     color: $color-white;
     gap: 10px;
     transition: $transition;
-    opacity: 0.8;
 
     &:hover {
-      opacity: 1;
+      color: $color-blue-hover;
     }
   }
 
@@ -45,11 +44,10 @@
     gap: 12px;
 
     a {
-      opacity: 0.8;
       transition: $transition;
 
       &:hover {
-        opacity: 1;
+        color: $color-blue-hover;
       }
     }
   }
@@ -62,7 +60,7 @@
     a,
     span {
       color: $color-gray;
-      font-size: 12px;
+      font-size: 1rem;
     }
 
     a {
@@ -78,7 +76,8 @@
   &__booking {
     min-height: 28px;
     padding: 0 16px;
-    font-size: 12px;
+    font-size: 0.825rem;
+    border-color: #cfd6df;
   }
 
   @include tablet {

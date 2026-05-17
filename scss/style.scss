@@ -6,20 +6,22 @@
 @use "./base/utilities";
 
 @use "./components/buttons";
-@use "./components/floating-booking";  
+@use "./components/floating-booking";
 @use "./components/input";
 @use "./components/card";
- 
+
 @use "./sections/topbar";
 @use "./sections/header";
 @use "./sections/hero";
 @use "./sections/footer";
 @use "./sections/services";
-@use "./sections/process"; 
-
-/* @use "./sections/before-after";  
+@use "./sections/before-after";
 @use "./sections/about";
+@use "./sections/cta-banner";
+
+/* 
 @use "./sections/reviews";
+@use "./sections/process";
 @use "./sections/brands";
 @use "./sections/faq"; 
 @use "./sections/seo-block"; 

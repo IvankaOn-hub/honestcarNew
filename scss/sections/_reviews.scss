@@ -2,10 +2,9 @@
 @use "../abstracts/mixins" as *;
 
 .reviews {
-  /* background: radial-gradient(circle at top left, rgba($color-blue, 0.06), transparent 34%), $color-black; */
- background:
+  /* background:
     radial-gradient(circle at 88% 18%, rgba(127, 151, 199, 0.05), transparent 30%),
-    #050910;
+    #050910; */
   &__inner {
     @include container;
 
@@ -84,7 +83,11 @@
     border-radius: $radius-sm;
     border: 1px solid rgba($color-white, 0.06);
 
-    background: linear-gradient(90deg, rgba($color-white, 0.025), rgba($color-blue, 0.025));
+    background: linear-gradient(
+      90deg,
+      rgba($color-white, 0.025),
+      rgba($color-blue, 0.025)
+    );
 
     @include tablet {
       grid-template-columns: repeat(4, 1fr);
@@ -139,7 +142,11 @@
   border-radius: $radius-sm;
   border: 1px solid rgba($color-white, 0.06);
 
-  background: linear-gradient(180deg, rgba($color-white, 0.035), rgba($color-white, 0.015));
+  background: linear-gradient(
+    180deg,
+    rgba($color-white, 0.035),
+    rgba($color-white, 0.015)
+  );
 
   transition:
     transform 0.35s ease,
@@ -148,7 +155,11 @@
 
   &:hover {
     border-color: rgba(127, 151, 199, 0.24);
-    background: linear-gradient(180deg, rgba($color-white, 0.045), rgba($color-blue, 0.025));
+    background: linear-gradient(
+      180deg,
+      rgba($color-white, 0.045),
+      rgba($color-blue, 0.025)
+    );
   }
 
   &__stars {

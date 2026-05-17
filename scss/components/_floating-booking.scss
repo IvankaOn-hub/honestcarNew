@@ -10,7 +10,12 @@
 
   min-height: 82px;
 
-  background: linear-gradient(90deg, rgba($color-navy, 0.78), rgba($color-navy-light, 0.54), rgba($color-blue, 0.16));
+  background: linear-gradient(
+    90deg,
+    rgb(5 9 16),
+    rgb(10 12 16 / 98%),
+    rgb(0 0 0)
+  );
 
   border-top: 1px solid rgba($color-white, 0.1);
   backdrop-filter: blur(22px);
@@ -41,7 +46,7 @@
     span {
       display: block;
       margin-top: 2px;
-      color: $color-gray;
+      color: $color-white;
       font-size: 14px;
     }
   }
@@ -91,7 +96,13 @@
 
     min-height: 100vh;
 
-    background: radial-gradient(circle at top right, rgba($color-blue, 0.18), transparent 36%), rgba($color-navy, 0.94);
+    background:
+      radial-gradient(
+        circle at top right,
+        rgba($color-blue, 0.18),
+        transparent 36%
+      ),
+      rgba($color-navy, 0.94);
 
     backdrop-filter: blur(28px);
 

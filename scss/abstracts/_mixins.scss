@@ -117,7 +117,7 @@
 @mixin body-text-sm {
   font-family: $font-main;
 
-  font-size: clamp(.625rem, 1vw, 1rem);
+  font-size: clamp(0.625rem, 1vw, 1rem);
   font-weight: 400;
   line-height: 1.75;
   letter-spacing: -0.015em;

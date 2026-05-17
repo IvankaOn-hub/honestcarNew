@@ -4,7 +4,7 @@ input:not([type="radio"]):not([type="checkbox"]),
 textarea {
   width: 100%;
 
-  border-radius: $radius-md;
+  border-radius: $radius-sm;
   background: $color-glass;
   border: 0.0625rem solid $color-border-soft;
   color: $color-white;
@@ -24,7 +24,7 @@ textarea {
     box-shadow $transition;
 
   &::placeholder {
-    color: $color-gray;
+    color: $color-light;
   }
 
   &:hover {
