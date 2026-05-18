@@ -14,7 +14,6 @@
     background $transition;
 
   &:hover {
-    transform: translateY(-0.125rem);
     border-color: $color-border;
     background: $color-glass-hover;
   }
