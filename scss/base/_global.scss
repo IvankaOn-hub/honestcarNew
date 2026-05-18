@@ -32,12 +32,6 @@ section {
     color: $color-dark-gray;
   }
 
-  & .eyebrow {
-    color: $color-dark-gray;
-    &::before {
-      background-color: $color-dark-gray;
-    }
-  }
 
   & .btn.btn--ghost {
     backdrop-filter: blur(32px);
@@ -47,27 +41,15 @@ section {
   }
 }
 .eyebrow {
-  color: $color-blue-soft;
+  color: $color-dark-gray;
   font-family: $font-main;
   font-size: 11px;
   font-weight: 500;
   letter-spacing: 0.24em;
   text-transform: uppercase;
-  padding-left: 2rem;
   position: relative;
   display: inline-block;
-
-  &::before {
-    content: "";
-    display: block;
-    position: absolute;
-    height: 1px;
-    width: 1.5rem;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: $color-blue-soft;
-  }
+  opacity: .5;
 }
 
 .section {
