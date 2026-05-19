@@ -2,32 +2,12 @@
 @use "../abstracts/mixins" as *;
 
 .reviews {
-  /* background:
-    radial-gradient(circle at 88% 18%, rgba(127, 151, 199, 0.05), transparent 30%),
-    #050910; */
-  &__inner {
-    @include container;
+  text-align: center;
 
-    display: grid;
-    gap: 56px;
-
-    @include desktop {
-      grid-template-columns: 0.38fr 0.62fr;
-      align-items: start;
-      gap: 72px;
-    }
-  }
-
-  .section__title {
-    margin-top: 18px;
-    max-width: 9ch;
-  }
-
+ 
+ 
   &__text {
     margin-top: 28px;
-    max-width: 320px;
-
-    color: rgba($color-white, 0.62);
     font-size: 18px;
     font-weight: 300;
     line-height: 1.65;
@@ -36,12 +16,11 @@
   &__rating {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 14px;
 
-    margin-top: 42px;
 
     span {
-      color: rgba($color-white, 0.94);
       font-family: $font-heading;
       font-size: 42px;
       font-weight: 300;
@@ -55,43 +34,12 @@
     }
   }
 
-  &__source {
-    margin: 10px 0 32px;
-
-    color: rgba($color-white, 0.48);
-    font-size: 14px;
-    line-height: 1.5;
-  }
+ 
 
   &__grid {
-    display: grid;
-    gap: $gap-xl;
-
-    @include tablet {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-
-  &__stats {
-    grid-column: 1 / -1;
-
-    padding: 28px;
-
-    display: grid;
-    gap: 28px;
-
-    border-radius: $radius-sm;
-    border: 1px solid rgba($color-white, 0.06);
-
-    background: linear-gradient(
-      90deg,
-      rgba($color-white, 0.025),
-      rgba($color-blue, 0.025)
-    );
-
-    @include tablet {
-      grid-template-columns: repeat(4, 1fr);
-    }
+    display: flex;
+    gap: $gap-sm;
+    margin: 3rem 0;
   }
 
   &__stat {
@@ -114,7 +62,6 @@
     span {
       display: block;
 
-      color: rgba($color-white, 0.92);
       font-family: $font-heading;
       font-size: clamp(28px, 3vw, 42px);
       font-weight: 300;
@@ -124,16 +71,18 @@
     p {
       margin-top: 6px;
 
-      color: rgba($color-white, 0.52);
       font-size: 14px;
       line-height: 1.5;
     }
   }
+
 }
 
 .review-card {
   min-height: 230px;
   padding: 28px;
+  width: 25rem;
+  text-align: start;
 
   display: flex;
   flex-direction: column;
@@ -171,7 +120,6 @@
   }
 
   p {
-    color: rgba($color-white, 0.72);
     font-size: 16px;
     font-weight: 300;
     line-height: 1.65;
@@ -184,12 +132,10 @@
     margin-top: 28px;
 
     span:first-child {
-      color: rgba($color-white, 0.62);
       font-size: 14px;
     }
 
     span:last-child {
-      color: rgba($color-white, 0.38);
       font-size: 13px;
     }
   }

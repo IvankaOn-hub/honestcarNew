@@ -1,0 +1,42 @@
+<svg
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <!-- body -->
+  <path
+    d="M4.5 14.5V12.8C4.5 11.6 5.3 10.5 6.5 10.2L9 9.5L11 7.4C11.5 6.9 12.1 6.6 12.8 6.6H16.5C17.6 6.6 18.5 7.2 19 8.2L20.2 10.5C20.7 10.8 21 11.3 21 11.9V14.5C21 15.3 20.3 16 19.5 16H18"
+    stroke="currentColor"
+    stroke-width="1.8"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+
+  <!-- left wheel -->
+  <circle
+    cx="8"
+    cy="16"
+    r="2"
+    stroke="currentColor"
+    stroke-width="1.8"
+  />
+
+  <!-- right wheel -->
+  <circle
+    cx="16"
+    cy="16"
+    r="2"
+    stroke="currentColor"
+    stroke-width="1.8"
+  />
+
+  <!-- window -->
+  <path
+    d="M9.2 9.5H16.4"
+    stroke="currentColor"
+    stroke-width="1.8"
+    stroke-linecap="round"
+  />
+</svg>
