@@ -7,7 +7,7 @@
   z-index: 9999;
   min-height: 37px;
   background: $color-black;
-  border-bottom: 1px solid $color-border;
+ /*  border-bottom: 1px solid $color-border; */
   backdrop-filter: blur(18px);
   font-size: 1rem;
 
@@ -78,6 +78,7 @@
     padding: 0 16px;
     font-size: 0.825rem;
     border-color: #cfd6df;
+    line-height: 0;
   }
 
   @include tablet {

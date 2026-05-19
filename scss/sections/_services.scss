@@ -5,13 +5,11 @@
   position: relative;
   overflow: hidden;
   transition:
-    background-color .9s ease,
-    color  .9s ease;
+  background-color .9s ease,
+  color  .9s ease;
 
   .section__title {
     margin-top: 18px;
-
-    max-width: 11ch;
   }
 
   &__intro {
@@ -94,7 +92,7 @@
   display: flex;
   justify-content: end;
   flex-direction: column;
-   overflow: hidden;
+  overflow: hidden;
 
 /*   aspect-ratio: 10 / 7; */
  
@@ -115,6 +113,7 @@
     background-repeat: no-repeat;
 
     transform: scale(1);
+    filter: grayscale(.8);
 
     transition:
       transform 0.8s ease,
@@ -153,6 +152,8 @@
     font-size: clamp(1.75rem, 3vw, 2rem);
     font-weight: 400;
     line-height: 1;
+    color: #f5f5f7b3;
+    transition: $transition;
   }
 
   img{
@@ -167,7 +168,11 @@
       background: $color-glass-hover;
       img{
       filter: invert(100%);
+      }
     }
+
+    & h3{
+      color: $color-white;
     }
   }
 }

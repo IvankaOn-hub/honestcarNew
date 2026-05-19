@@ -36,10 +36,10 @@ ul {
 }
 
 body {
-  background: #000000;
+  background: #050608;
   font-family: "Inter", sans-serif;
   font-size: clamp(1rem, 1.4vw, 1.125rem);
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.75;
   letter-spacing: -0.015em;
   color: #cfd6df;
@@ -225,12 +225,12 @@ section {
   background: #2f8cff;
   border: 0.0625rem solid #2f8cff;
   color: #f5f5f7;
-  box-shadow: 0 0.875rem 2.5rem rgba(47, 140, 255, 0.28);
+  box-shadow: 0 0.5rem 1.5rem rgba(47, 140, 255, 0.14);
 }
 .btn--primary:hover {
   background: #4a9cff;
   border-color: #4a9cff;
-  box-shadow: 0 1rem 3rem rgba(47, 140, 255, 0.36);
+  box-shadow: 0 0.5rem 1.5rem rgba(47, 140, 255, 0.21);
 }
 
 .btn--ghost {
@@ -444,7 +444,7 @@ textarea {
   padding: 1.5rem;
   border-radius: 1.75rem;
   background: rgba(255, 255, 255, 0.04);
-  border: 0.0625rem solid rgba(255, 255, 255, 0.06);
+  /* border: 0.0625rem solid $color-border-soft; */
   overflow: hidden;
   transition: transform 0.3s ease, border-color 0.3s ease, background 0.3s ease;
 }
@@ -484,7 +484,7 @@ textarea {
   z-index: 9999;
   min-height: 37px;
   background: #000000;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  /*  border-bottom: 1px solid $color-border; */
   backdrop-filter: blur(18px);
   font-size: 1rem;
 }
@@ -546,6 +546,7 @@ textarea {
   padding: 0 16px;
   font-size: 0.825rem;
   border-color: #cfd6df;
+  line-height: 0;
 }
 @media (min-width: 48rem) {
   .topbar__inner {
@@ -570,7 +571,7 @@ textarea {
 
 .header {
   position: sticky;
-  top: 43px;
+  top: 42px;
   z-index: 100;
   background: #000000;
   backdrop-filter: blur(24px);
@@ -894,7 +895,6 @@ textarea {
 }
 .services .section__title {
   margin-top: 18px;
-  max-width: 11ch;
 }
 .services__intro {
   max-width: 440px;
@@ -988,6 +988,7 @@ textarea {
   background-position: center;
   background-repeat: no-repeat;
   transform: scale(1);
+  filter: grayscale(0.8);
   transition: transform 0.8s ease, filter 0.6s ease;
 }
 .service-card::after {
@@ -1016,6 +1017,8 @@ textarea {
   font-size: clamp(1.75rem, 3vw, 2rem);
   font-weight: 400;
   line-height: 1;
+  color: rgba(245, 245, 247, 0.7019607843);
+  transition: 0.3s ease;
 }
 .service-card img {
   filter: invert(55%);
@@ -1027,6 +1030,9 @@ textarea {
 }
 .service-card:hover .icon-round img {
   filter: invert(100%);
+}
+.service-card:hover h3 {
+  color: #f5f5f7;
 }
 
 .service-card:nth-child(1) {
@@ -1230,10 +1236,15 @@ textarea {
 }
 
 .about {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1.875rem;
+  display: grid;
+  gap: 1.5rem;
+}
+@media (min-width: 64rem) {
+  .about {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 92px;
+  }
 }
 .about__img {
   display: block;
@@ -1242,12 +1253,18 @@ textarea {
   overflow: hidden;
   filter: grayscale(0.4) brightness(0.78) contrast(1.08);
 }
+@media (min-width: 64rem) {
+  .about__img {
+    order: 1;
+  }
+}
 .about__content {
   max-width: 650px;
 }
-.about .section__title {
-  margin-top: 18px;
-  max-width: 12ch;
+@media (min-width: 64rem) {
+  .about__content {
+    order: 2;
+  }
 }
 .about__text {
   display: grid;
@@ -1261,24 +1278,19 @@ textarea {
 
 .cta-banner {
   position: relative;
+  overflow: hidden;
+  padding: 0;
 }
-.cta-banner::after {
-  position: absolute;
+.cta-banner.white-section__inner {
+  background: #f5f5f7;
+  border-radius: 1.75rem;
+  color: #000000;
+}
+.cta-banner.white-section .cta-banner__image::before {
   content: "";
-  background: url("../images/cta/car.png");
-  background-size: cover;
-  background-position: center right;
-  background-repeat: no-repeat;
-  width: 40%;
-  height: 90%;
-  opacity: 0.3;
-  bottom: 0;
-  right: 0;
-}
-@media (min-width: 64rem) {
-  .cta-banner::after {
-    width: 20%;
-  }
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, #f5f5f7 0%, rgba(245, 245, 247, 0.75) 18%, rgba(245, 245, 247, 0.08) 55%, rgba(0, 0, 0, 0.15) 100%);
 }
 .cta-banner__inner {
   width: 100%;
@@ -1297,25 +1309,49 @@ textarea {
   }
 }
 .cta-banner__inner {
-  padding: 6rem 2rem;
   position: relative;
+  min-height: 28rem;
+  padding: 6rem 2rem;
   display: grid;
-  gap: 28px;
   align-items: center;
   overflow: hidden;
 }
 @media (min-width: 64rem) {
   .cta-banner__inner {
-    grid-template-columns: 1fr auto;
+    grid-template-columns: 0.9fr 1.1fr;
+    padding: 6rem 5rem;
   }
 }
 .cta-banner__content {
   position: relative;
-  z-index: 2;
-  max-width: 620px;
+  z-index: 3;
+  max-width: 46rem;
+}
+.cta-banner__text {
+  max-width: 32rem;
+  margin-top: 1.5rem;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #f5f5f7;
+}
+.cta-banner__image {
+  position: absolute;
+  inset: auto 0 0 auto;
+  width: 58%;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(41, 41, 42, 0) 0%, rgba(149, 149, 149, 0.15) 100%), url("../images/cta/car.png");
+  background-size: cover;
+  background-position: center right;
+  background-repeat: no-repeat;
+  clip-path: polygon(18% 0, 100% 0, 100% 100%, 0 100%);
+}
+@media (min-width: 64rem) {
+  .cta-banner__image {
+    width: 55%;
+  }
 }
 .cta-banner .btn {
-  margin-top: 28px;
+  margin-top: 2rem;
 }
 
 /* 

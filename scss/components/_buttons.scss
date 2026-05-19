@@ -42,12 +42,12 @@
   border: 0.0625rem solid $color-blue;
   color: $color-white;
 
-  box-shadow: 0 0.875rem 2.5rem rgba(47, 140, 255, 0.28);
+  box-shadow: 0 0.5rem 1.5rem rgb(47 140 255 / 14%);
 
   &:hover {
     background: $color-blue-hover;
     border-color: $color-blue-hover;
-    box-shadow: 0 1rem 3rem rgba(47, 140, 255, 0.36);
+    box-shadow: 0 0.5rem 1.5rem rgb(47 140 255 / 21%);
   }
 }
 

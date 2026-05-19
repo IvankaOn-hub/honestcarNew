@@ -2,8 +2,14 @@
 @use "../abstracts/mixins" as *;
 
 .about {
-  @include flex-center;
-  gap: $gap-xl;
+  display: grid;
+  gap: $gap-md;
+
+  @include desktop {
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 92px;
+    }
 
   &__img {
     display: block;
@@ -11,16 +17,18 @@
     border-radius: $radius-sm;
     overflow: hidden;
     filter: grayscale(0.4) brightness(0.78) contrast(1.08);
+    @include desktop {
+      order: 1;
+    }
   }
 
   &__content {
     max-width: 650px;
+    @include desktop {
+      order: 2;
+    }
   }
 
-  .section__title {
-    margin-top: 18px;
-    max-width: 12ch;
-  }
 
   &__text {
     display: grid;
