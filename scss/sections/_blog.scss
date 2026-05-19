@@ -2,41 +2,26 @@
 @use "../abstracts/mixins" as *;
 
 .blog-preview {
- /*  background:
-    radial-gradient(circle at top right, rgba($color-blue, 0.055), transparent 32%),
-    $color-black; */
-    background:
-    radial-gradient(circle at 85% 0%, rgba(127, 151, 199, 0.05), transparent 28%),
-    #050910;
 
   &__inner {
     @include container;
-
-    display: grid;
-    gap: 40px;
-
-    @include desktop {
-      grid-template-columns: 0.68fr 0.32fr;
-      align-items: stretch;
-      gap: 56px;
-    }
+    text-align: center;
   }
 
   &__head {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+    
+    max-width: 600px;
+    margin: 0 auto;
 
     .section__title {
       margin: 18px 0 32px;
-      max-width: 9ch;
     }
   }
 
   &__grid {
     display: grid;
-    gap: $gap-md;
+    gap: $gap-xl;
+    margin: 4rem 0;
 
     @include tablet {
       grid-template-columns: repeat(3, 1fr);
@@ -119,12 +104,14 @@
     display: flex;
     flex: 1;
     flex-direction: column;
+  text-align: start;
+
   }
 
   &__category {
     margin-bottom: 14px;
 
-    color: rgba(127, 151, 199, 0.72);
+    color: $color-gray;
     font-size: 11px;
     font-weight: 600;
     letter-spacing: 0.16em;
@@ -147,13 +134,13 @@
   }
 
   &__link {
-    margin-top: auto;
+    margin-top: 1rem;
 
     display: inline-flex;
     align-items: center;
     gap: 8px;
 
-    color: rgba(127, 151, 199, 0.82);
+    color: $color-gray;
 
     font-size: 13px;
     font-weight: 500;

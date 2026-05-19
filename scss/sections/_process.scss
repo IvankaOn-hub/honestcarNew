@@ -20,8 +20,17 @@
     border-radius: 1.25rem;
     overflow: hidden;
     filter: grayscale(0.4) brightness(0.78) contrast(1.08);
+    @include desktop {
+      order: 1;
+    }
   }
-  
+
+  &__desc{
+
+    @include desktop {
+      order: 2;
+    }
+  }
 }
 
 .process__timeline {
@@ -40,6 +49,8 @@
     background: rgba(100, 107, 115, 0.18);
     height: 70%;
   }
+
+  
 }
 
 .process__item {
@@ -114,6 +125,7 @@
     width: 2rem;
     height: 2rem;
     filter: invert(55%);
+    transition: $transition;
   }
 }
 
@@ -125,6 +137,9 @@
   box-shadow:
     0 0 24px rgba(47,140,255,0.14),
     0 12px 30px rgba(0,0,0,0.32);
+    & img {
+    filter: invert(80%);
+  }
 }
 .process__content {
   padding-top: 0.3rem;

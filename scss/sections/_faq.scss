@@ -2,31 +2,15 @@
 @use "../abstracts/mixins" as *;
 
 .faq {
-  /* background:
-    radial-gradient(circle at left center, rgba($color-blue, 0.055), transparent 32%),
-    $color-black; */
     background:
     linear-gradient( 
-      90deg,
-      rgba(5, 9, 16, 0.98) 0%,
-      rgba(5, 9, 16, 0.9) 45%,
-      rgba(5, 9, 16, 0.74) 100%
-    ),
-    url("../images/faq/faq.png");
+      90deg, rgb(5 6 8) 0%, rgb(5 6 8 / 98%) 22%, rgb(1 1 1 / 92%) 100%),
+    url("../images/faq/faq.jpg");
 
   background-size: cover;
   background-position: center;
-/* 
-    background:
-    linear-gradient(
-      90deg,
-      rgba(1, 3, 8, 0.98) 0%,
-      rgba(1, 3, 8, 0.92) 45%,
-      rgba(1, 3, 8, 0.76) 100%
-    ),
-    url("../images/faq/faq.png"); */
-
   background-repeat: no-repeat;
+  
 
   &__inner {
     @include container;
@@ -43,7 +27,6 @@
 
   .section__title {
     margin-top: 18px;
-    max-width: 9ch;
   }
 
 
@@ -64,7 +47,7 @@
 
 .faq-item {
   border-bottom: 1px solid rgba($color-white, 0.06);
-
+backdrop-filter: blur(14px);
   &:last-child {
     border-bottom: 0;
   }
@@ -81,8 +64,7 @@
     cursor: pointer;
     list-style: none;
 
-    color: rgba($color-white, 0.86);
-    font-size: 17px;
+    font-size: 20px;
     font-weight: 400;
 
     transition:
@@ -132,8 +114,7 @@
     max-width: 720px;
     padding: 0 28px 28px;
 
-    color: rgba($color-white, 0.58);
-    font-size: 15px;
+    font-size: 1rem;
     font-weight: 300;
     line-height: 1.7;
   }
@@ -142,8 +123,8 @@
     background:
       linear-gradient(
         180deg,
-        rgba(127, 151, 199, 0.04),
-        rgba($color-white, 0.008)
+        rgba(127, 151, 199, 0.09),
+        rgba($color-white, 0.009)
       );
 
     summary {
